@@ -20,8 +20,18 @@
             </button>
           </div>
           <!-- End mobile menu button -->
-          
         </div>
+        <!-- Start mobile Menu open: "block", Menu close:"hidden" -->
+        <ul class="mt-8 space-y-4 md:space-y-0 md:space-x-4 text-sm flex-col md:flex md:flex-row md:items-center md:mt-0">
+          <li class="text-white hover:text-indigo-400"><NuxtLink to="/">หน้าแรก</NuxtLink></li>
+          <li class="text-white hover:text-indigo-400"><NuxtLink to="/">เกี่ยวกับเรา</NuxtLink></li>
+          <li class="text-white hover:text-indigo-400"><NuxtLink to="/">ฝ่ายบริหาร</NuxtLink></li>
+          <li class="text-white hover:text-indigo-400"><NuxtLink to="/">สาขาวิชา</NuxtLink></li>
+          <li class="text-white hover:text-indigo-400"><NuxtLink to="/">หลักสูตร</NuxtLink></li>
+          <li class="text-white hover:text-indigo-400"><NuxtLink to="/">รับสมัครนักศึกษา</NuxtLink></li>
+          <li class="text-white hover:text-indigo-400"><NuxtLink to="/">เว็บอื่นๆ</NuxtLink></li>
+        </ul>
+        <!-- End mobile Menu open: "block", Menu close:"hidden" -->
       </nav>
     </div>
     <!-- End Header -->
