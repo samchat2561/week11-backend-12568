@@ -58,6 +58,31 @@ const toggleNav = ()=>{
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                   </svg>
               </button>
+              
+              <!-- Dropdown menu -->
+              <button class="fixed top-0 inset-0 h-full w-full z-10 cursor-default"></button>
+              <div class="py-2 mt-2 bg-white rounded-md shadow-xl absolute lg:right-0 z-10 w-44 divide-y divide-gray-200">
+                <NuxtLink to="/history" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="2">
+                  ประวัติความเป็นมา
+                </NuxtLink>
+                <NuxtLink to="/vision" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="3">
+                  วิสัยทัศน์และพันธกิจ</NuxtLink>
+                <NuxtLink to="/boss" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="4">
+                  คณะผู้บริหาร
+                </NuxtLink>
+                <NuxtLink to="/executive" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="5">
+                  ทำเนียบผู้บริหาร
+                </NuxtLink>
+                <NuxtLink to="/staff" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="6"> 
+                  คณะผู้บริหาร
+                </NuxtLink>
+                <NuxtLink to="/map" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="7">
+                  แผนที่วิทยาลัย
+                </NuxtLink>
+                <NuxtLink to="/contact" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="8">
+                  ติดต่อวิทยาลัย
+                </NuxtLink>
+              </div>
             </div>
             
           </li>
