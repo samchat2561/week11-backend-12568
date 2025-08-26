@@ -125,15 +125,42 @@ const toggleNav = ()=>{
               รับสมัครนักศึกษา
             </NuxtLink>
           </li>
+
+          <!-- Start other menu -->
           <li class="text-white hover:text-indigo-400">
-            <NuxtLink to="/" class="flex items-center text-md hover:text-amber-200">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-4.131A15.838 15.838 0 0 1 6.382 15H2.25a.75.75 0 0 1-.75-.75 6.75 6.75 0 0 1 7.815-6.666ZM15 6.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" clip-rule="evenodd" />
-                <path d="M5.26 17.242a.75.75 0 1 0-.897-1.203 5.243 5.243 0 0 0-2.05 5.022.75.75 0 0 0 .625.627 5.243 5.243 0 0 0 5.022-2.051.75.75 0 1 0-1.202-.897 3.744 3.744 0 0 1-3.008 1.51c0-1.23.592-2.323 1.51-3.008Z" />
-              </svg>
-              เว็บอื่นๆ
-            </NuxtLink>
+            <div class="relative">
+              <!-- Dropdown toggle button -->
+              <button type="button" class="flex items-center rounded-md focus:outline-none">
+                <NuxtLink to="/" class="flex items-center text-md hover:text-amber-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-4.131A15.838 15.838 0 0 1 6.382 15H2.25a.75.75 0 0 1-.75-.75 6.75 6.75 0 0 1 7.815-6.666ZM15 6.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" clip-rule="evenodd" />
+                    <path d="M5.26 17.242a.75.75 0 1 0-.897-1.203 5.243 5.243 0 0 0-2.05 5.022.75.75 0 0 0 .625.627 5.243 5.243 0 0 0 5.022-2.051.75.75 0 1 0-1.202-.897 3.744 3.744 0 0 1-3.008 1.51c0-1.23.592-2.323 1.51-3.008Z" />
+                  </svg>
+                  เว็บอื่นๆ
+                </NuxtLink>
+                  <svg class="w-5 h-5 text-indigo-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <button class="fixed top-0 inset-0 h-full w-full z-10 cursor-default"></button>
+              <div class="absolute md:right-0 w-48 py-2 mt-2 bg-white rounded-md shadow-xl z-20 divide-y divide-gray-200">
+                <a href="https://www.trattc.ac.th/" target="_blank" class=" block px-4 py-2 text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100">
+                  วท.ตราด
+                </a>
+                <a href="https://www.vec.go.th/" target="_blank" class=" block px-4 py-2 text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100">
+                  อาชีวศึกษา
+                </a>
+                <a href="https://www.moe.go.th/" target="_blank" class=" block px-4 py-2 text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100">
+                  กระทรวงศึกษาธิการ
+                </a>
+              </div>
+
+            </div>
+          
           </li>
+          <!-- End other menu -->
+        
         </ul>
         <!-- End mobile Menu open: "block", Menu close:"hidden" -->
       </nav>
