@@ -1,9 +1,11 @@
 <script setup lang="ts">
 const showMenu = ref(false)
+const showAbout = ref(false)
 
 const toggleNav = ()=>{
   showMenu.value = !showMenu.value
 }
+
 </script>
 
 <template>
@@ -45,7 +47,7 @@ const toggleNav = ()=>{
           <li class="text-white hover:text-indigo-400">
             <div class="relative">
               <!-- Dropdown toggle button -->
-              <button type="button" class="flex items-center rounded-md focus:outline-none">
+              <button @click="showAbout = !showAbout" type="button" class="flex items-center rounded-md focus:outline-none">
                 <NuxtLink to="/" class="flex items-center text-md hover:text-amber-200">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                     <path d="M11.584 2.376a.75.75 0 0 1 .832 0l9 6a.75.75 0 1 1-.832 1.248L12 3.901 3.416 9.624a.75.75 0 0 1-.832-1.248l9-6Z" />
@@ -58,10 +60,10 @@ const toggleNav = ()=>{
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                   </svg>
               </button>
-              
+
               <!-- Dropdown menu -->
-              <button class="fixed top-0 inset-0 h-full w-full z-10 cursor-default"></button>
-              <div class="py-2 mt-2 bg-white rounded-md shadow-xl absolute lg:right-0 z-10 w-44 divide-y divide-gray-200">
+              <button @click="showAbout = false" v-if="showAbout" class="fixed top-0 inset-0 h-full w-full z-10 cursor-default"></button>
+              <div v-if="showAbout" class="py-2 mt-2 bg-white rounded-md shadow-xl absolute lg:right-0 z-10 w-44 divide-y divide-gray-200">
                 <NuxtLink to="/history" class="block px-4 py-[0.4rem] text-[1.0rem] text-gray-900 hover:bg-indigo-400 hover:text-indigo-100" index="2">
                   ประวัติความเป็นมา
                 </NuxtLink>
