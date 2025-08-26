@@ -11,6 +11,10 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  
+  devServer:{
+    port:8001
+  },
 
   modules: ['@nuxtjs/google-fonts'],
 })
