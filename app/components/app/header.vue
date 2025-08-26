@@ -1,3 +1,11 @@
+<script setup lang="ts">
+const showMenu = ref(false)
+
+const toggleNav = ()=>{
+  showMenu.value = !showMenu.value
+}
+</script>
+
 <template>
   <div class="font-[sans-serif] bg-gray-200 max-h-screen">
     <!-- Start Header -->
@@ -12,7 +20,7 @@
           </NuxtLink>
 
           <!-- Start mobile menu button -->
-          <div class="flex md:hidden">
+          <div @click="toggleNav" class="flex md:hidden">
             <button type="button" class="text-white hover:text-gray-400 focus:text-gray-300 focus:outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -22,7 +30,7 @@
           <!-- End mobile menu button -->
         </div>
         <!-- Start mobile Menu open: "block", Menu close:"hidden" -->
-        <ul class="mt-8 space-y-4 md:space-y-0 md:space-x-4 text-sm flex-col md:flex md:flex-row md:items-center md:mt-0">
+        <ul :class="showMenu ? 'flex':'hidden' " class="mt-8 space-y-4 md:space-y-0 md:space-x-4 text-sm flex-col md:flex md:flex-row md:items-center md:mt-0">
           <li class="text-white hover:text-indigo-400"><NuxtLink to="/">หน้าแรก</NuxtLink></li>
           <li class="text-white hover:text-indigo-400"><NuxtLink to="/">เกี่ยวกับเรา</NuxtLink></li>
           <li class="text-white hover:text-indigo-400"><NuxtLink to="/">ฝ่ายบริหาร</NuxtLink></li>
@@ -37,7 +45,5 @@
     <!-- End Header -->
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped></style>
