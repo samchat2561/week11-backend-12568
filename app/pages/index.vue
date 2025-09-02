@@ -1,8 +1,20 @@
+<script lang="ts" setup>
+  const title = ref('วิทยาลัยเทคนิคตราด')
+</script>
+
 <template>
+  <Head>
+    <Title>{{ title }}</Title>
+    <Meta name="description" :content="title" />
+    <Style>
+    body { background-color: green; }
+    </Style>
+  </Head>
+
   <div class="font-[Sarabun] bg-white py-14 px-6 sm:px-12 bg-gradient-to-r from-pink-50 via-pink-50 to-blue-100">
     <div class="max-w-screen-xl mx-auto shadow-2xl rounded-xl p-4">
       <div class="max-w-screen-md font-[Kanit]">
-        <h2 class="text-[#801810] xl:text-5xl md:text-5xl text-4xl font-bold !leading-tight"> สาส์นจากผู้อำนวยการ</h2>
+          <h2 class="text-[#801810] xl:text-5xl md:text-5xl text-4xl font-bold !leading-tight">สาส์นจากผู้อำนวยการ</h2>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-16 lg:gap-12 mt-6">
@@ -27,7 +39,7 @@
           </div>
 
           <div class="mt-12 flex flex-wrap gap-x-2 gap-y-2">
-            <!-- <a href="https://rms.trattc.ac.th/?p=login" target="_blank">
+            <a href="https://rms.trattc.ac.th/?p=login" target="_blank">
               <img src="~/assets/img/rms.png" class="shrink-0 w-48 h-32 shadow-2xl rounded-md p-2 hover:scale-[1.05] transition-all" alt="brand-logo1" />
             </a>
 
@@ -37,15 +49,19 @@
 
             <a href="https://admission.vec.go.th/web/Login.htm?mode=index" target="_blank">
               <img src="~/assets/img/std_register.png" class="w-48 h-32 shrink-0 shadow-2xl rounded-md p-2 hover:scale-[1.05] transition-all" alt="brand-logo3" />
-            </a> -->
-          </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="max-w-full">
+            <img src="~/assets/img/child2568.jpg" class="shrink-0 shadow-2xl rounded-md object-contain hover:scale-[1.05] transition-all" />
         </div>
       </div>
-
     </div>
   </div>
+
 </template>
 
-<script lang="ts" setup></script>
+<style>
 
-<style></style>
+</style>
