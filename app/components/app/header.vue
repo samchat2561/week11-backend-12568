@@ -10,7 +10,7 @@ const toggleNav = ()=>{
 </script>
 
 <template>
-  <div class="font-[Sarabun] bg-gray-200 max-h-screen">
+  <div class="font-[Sarabun] bg-gray-200 max-h-screen fixed top-0 w-full">
     <!-- Start Header -->
     <div class="text-gray-600 bg-[#802918]">
       <nav class="container px-6 py-[0.4rem] mx-auto md:flex md:justify-between md:items-center shadow-xl pl-5 md:px-30 z-0 cursor-pointer">
