@@ -16,7 +16,19 @@
               <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
             </svg>
             วิทยาลัยเทคนิคตราด
-          </h4>   
+          </h4>
+          <hr class="w-54 bg-gray-100 border-spacing-x-0.5 text-white rounded-sm dark:bg-gray-700" />
+          <ul class="space-y-2 ml-6 mt-2 text-white" style="list-style-type: square;">
+            
+            <li class="text-white text-sm">
+              <a href="#">About Us</a>
+            </li>
+
+            <li class="text-white text-sm">
+              <a href="#">Contact Us</a>
+            </li>
+            
+          </ul>   
         </div>
       </div>
     </div>
