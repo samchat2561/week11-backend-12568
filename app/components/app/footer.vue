@@ -56,6 +56,23 @@
           </ul>   
         </div>
 
+        <div class="lg:col-span-1 max-w-md">
+          <h4 class="text-base font-medium mb-3 text-gray-100 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+            </svg>
+            ติดต่อ-วิทยาลัยเทคนิคตราด
+          </h4>
+          <hr class="w-54 bg-gray-100 border-spacing-x-0.5 text-white rounded-sm dark:bg-gray-700" />
+          <ul class="space-y-2 ml-6 mt-2 text-white" style="list-style-type: square;">
+            <li class="text-white text-sm mt-2">วิทยาลัยเทคนิคตราด</li>
+            <li class="text-white text-sm mt-2">480 หมู่ 9 ถ.สุขุมวิท ต.วังกระแจะ</li>
+            <li class="text-white text-sm">อ.เมือง จ.ตราด 23000</li>
+            <li class="text-white text-sm">Trat43technical@gmail.com</li>
+            <li class="text-white text-sm">039-518-105</li>
+          </ul>   
+        </div>
+
       </div>
     </div>
 
