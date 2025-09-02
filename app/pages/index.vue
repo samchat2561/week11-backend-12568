@@ -60,6 +60,34 @@
     </div>
   </div>
 
+  <div class="font-[Sarabun] min-h-screen bg-white px-6 sm:px-12 bg-gradient-to-r from-pink-50 via-pink-50 to-blue-100 py-2 mb-10">
+    <div class="mx-auto sm:max-w-6xl md:max-w-7xl max-w-md pl-0 md:pl-0 shadow-2xl rounded-xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2 sm:mb-2 mt-5 p-4">ข่าวล่าสด</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-4 p-4">
+
+        <div class="bg-white flex flex-col rounded-lg overflow-hidden shadow-md hover:scale-[1.02] transition-all">
+          <div class="aspect-[3/2] cursor-pointer">
+            <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover" alt="Card image" />
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-slate-900 text-xl font-semibold">Heading</h3>
+            <p class="mt-3 text-md text-slate-500 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt consequuntur necessitatibus, eveniet
+              eligendi ullam?
+            </p>
+            <button type="button" class="mt-6 px-5 py-2.5 rounded-lg text-white text-sm font-medium tracking-wider border-none outline-none bg-blue-600 
+            hover:bg-blue-700 active:bg-blue-600 cursor-pointer">
+              View
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <style>
